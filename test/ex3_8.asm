@@ -2,16 +2,14 @@ start:
   in r0 # int n
   in r1 # char c 
   ldi r3, 0 # i = 0 
-  jmp reset_j # on init j 
-
-reset_j: 
-  ldi r4, 0 # reset j 
+  ldi r4, 0 # j=0
   jmp loop_i # on lance la boucle
 
 input_enter:
   ldi r2, 13
   out r2
-  jmp reset_j
+  ldi r4, 0 # reset j
+  jmp loop_i
 
 loop_j:
   addi r4, r4, 1 # j++
