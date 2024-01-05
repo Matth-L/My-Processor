@@ -1,3 +1,8 @@
+# @file 123.asm
+# @brief read all char until Enter is pressed
+# then it prints them in the reverse order, from recent to oldest
+# @param n * char : char to read then print
+
 start:
   ldi r0, 13 # Enter
   ldi r1, 0 # adress 

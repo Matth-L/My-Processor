@@ -1,3 +1,5 @@
+# @file : jeq_forw.asm
+# @brief : test jeq when the jump is forward
 loop:
   ldi r0, 42
   ldi r1, 42

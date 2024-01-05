@@ -1,19 +1,25 @@
+# @file square.asm
+# @brief affiche un carré de n lignes et n colonnes
+# @param n : nombre de lignes et de colonnes
+# @param c : caractère à afficher
+
 start: 
   in r0 # int n
   in r1 # char c 
+  ldi r2, 13
   ldi r3, 0 # i = 0 
   ldi r4, 0 # j=0
   jmp loop_i # on lance la boucle
 
 input_enter:
-  ldi r2, 13
+  # jamais atteint ? 
   out r2
   ldi r4, 0 # reset j
   jmp loop_i
 
 loop_j:
   addi r4, r4, 1 # j++
-  out r1 #print c 
+  out r1 # print c 
   jeq r4, r0, input_enter # on passe à entrée et on termine j 
   jmp loop_j
 
