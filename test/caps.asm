@@ -1,3 +1,7 @@
+# @file : caps.asm
+# @brief : converts lowercase to uppercase
+# param : n * char : char to read and then convert 
+
 start:
   ldi r0, 13 # enter 
   ldi r1, 255 # no value
@@ -7,7 +11,6 @@ start:
   ldi r5, 0 # index
   ldi r6, 0 # count to check if index = count
   jmp loop_input
-  # r7 = input
 
 to_caps:
   sub r7, r7, r4  # changing to caps
@@ -15,6 +18,7 @@ to_caps:
   jmp loop_print
 
 loop_input: 
+  # r7 = input
   in r7
   jeq r7, r1, loop_input # if null value, loop
   jeq r7, r0, loop_print # if enter, print
