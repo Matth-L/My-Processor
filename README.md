@@ -17,6 +17,14 @@ Assembly code was made to test the processor. It's located in the folder `test`.
 </p>
 
 
+The processor is located in the folder `digproc`.
+
+To open the project, you need to install Diglog and open this folder by using the command: 
+
+```bash
+diglog digproc/*.lgf
+```
+
 ## Disclaimer
 
 The folder digcomp contains file to translate assembly code to binary code, it was given by the teacher of the
