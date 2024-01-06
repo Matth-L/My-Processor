@@ -12,7 +12,6 @@ start:
   jmp loop_i # on lance la boucle
 
 input_enter:
-  # jamais atteint ? 
   out r2
   ldi r4, 0 # reset j
   jmp loop_i

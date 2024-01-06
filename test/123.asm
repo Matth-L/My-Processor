@@ -7,7 +7,7 @@ start:
   ldi r0, 13 # Enter
   ldi r1, 0 # adress 
   ldi r4, 0 # jeq = 0 (16j)
-  ldi r3, -1 # null value
+  ldi r3, 255 # no value
   jmp fill_buffer
 
 fill_buffer:
