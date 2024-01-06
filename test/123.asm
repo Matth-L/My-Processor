@@ -8,11 +8,11 @@ start:
   ldi r1, 0 # adress 
   ldi r4, 0 # jeq = 0 (16j)
   ldi r3, 255 # no value
-  jmp fill_buffer
+  jmp in
 
-fill_buffer:
+in:
   in r2
-  jeq r2, r3, fill_buffer # flush the buffer and only takes non null value
+  jeq r2, r3, in # flush the buffer and only takes non null value
   jeq r2, r0, out # if r2 = Enter => print 
   st r2, r1 # MEM [adress] = r2
   addi r1, r1 , 1 # ----> 
