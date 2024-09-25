@@ -1,2 +1,2 @@
-*.ml linguist-vendored
-*.mli linguist-vendored
+digcomp/*.ml linguist-vendored
+digcomp/*.mli linguist-vendored
