@@ -10,7 +10,7 @@
 *.ml
 *.mli
 
-digcomp/
+/digcomp/
 
 # ocamlbuild working directory
 _build/
