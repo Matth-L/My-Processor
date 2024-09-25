@@ -1,2 +1,5 @@
 digcomp/*.ml linguist-vendored
 digcomp/*.mli linguist-vendored
+digcomp/*.mly linguist-vendored
+digcomp/*.cmi linguist-vendored
+digcomp/*.cmo linguist-vendored
