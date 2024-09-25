@@ -1,16 +1,4 @@
-*.annot
-*.cmo
-*.cma
-*.cmi
-*.a
-*.o
-*.cmx
-*.cmxs
-*.cmxa
-*.ml
-*.mli
-
-/digcomp/
+digcomp/*.ml
 
 # ocamlbuild working directory
 _build/
