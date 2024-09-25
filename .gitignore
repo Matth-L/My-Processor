@@ -1,4 +1,9 @@
 digcomp/*.ml
+digcomp/*.mli
+digcomp/*.mly
+digcomp/*.cmi
+digcomp/*.cmo
+
 
 # ocamlbuild working directory
 _build/
